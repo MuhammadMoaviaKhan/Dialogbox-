@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boxes in js</title>
+    <style>
+        * {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        // Topic 14 Prompt Box
+        var name = prompt("What is your name:");
+        if (name != "") {
+            document.write("Nice to meet you " + name + ".");
+        }
+        document.write("<br>");
+
+        // Topic 15 Confirmation Box with yes no option
+        function myfun() {
+            var userconfirmation = confirm(name +" do you want to visit website");
+            if (userconfirmation == true) {
+                window.open("https://www.wikipedia.org");
+            } else {
+                document.write(name +" does not want to visit the page ");
+                return false;
+            }
+        }
+    </script>
+    <button onclick="myfun()">Click me</button>
+</body>
+
+</html>
